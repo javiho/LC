@@ -1,5 +1,7 @@
 package my.vaadin.app;
 
+import java.time.temporal.ChronoUnit;
+
 import javax.servlet.annotation.WebServlet;
 
 import com.vaadin.annotations.Theme;
@@ -43,10 +45,11 @@ public class MyUI extends UI {
         Life life = new Life();
         user.setLife(life);
         
+        ChronoUnit defaultResolutionUnit = ChronoUnit.WEEKS;
         
         final MainView mainView = new MainView();
         setContent(mainView);
-        main
+        mainView.initialize(life, defaultResolutionUnit);
     }
 
     @WebServlet(urlPatterns = "/*", name = "MyUIServlet", asyncSupported = true)

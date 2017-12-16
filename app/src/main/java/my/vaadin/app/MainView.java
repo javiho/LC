@@ -2,7 +2,9 @@ package my.vaadin.app;
 
 import java.time.Duration;
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 
+import com.vaadin.ui.Label;
 import com.vaadin.ui.VerticalLayout;
 
 public class MainView extends VerticalLayout{
@@ -10,15 +12,16 @@ public class MainView extends VerticalLayout{
 	private final CalendarView calendarView;
 	
 	private Life life;
-	private Duration resolutionUnit;
+	private ChronoUnit resolutionUnit;
 	
 	public MainView(){
 		super();
+		this.addComponent(new Label("This is the Main View"));
 		calendarView = new CalendarView();
 		this.addComponent(calendarView);
 	}
 	
-	public void initialize(Life life, Duration resolutionUnit){
+	public void initialize(Life life, ChronoUnit resolutionUnit){
 		this.life = life;
 		this.resolutionUnit = resolutionUnit;
 		
@@ -35,11 +38,11 @@ public class MainView extends VerticalLayout{
 		this.life = life;
 	}
 
-	public Duration getResolutionUnit() {
+	public ChronoUnit getResolutionUnit() {
 		return resolutionUnit;
 	}
 
-	public void setResolutionUnit(Duration resolutionUnit) {
+	public void setResolutionUnit(ChronoUnit resolutionUnit) {
 		this.resolutionUnit = resolutionUnit;
 	}
 	
