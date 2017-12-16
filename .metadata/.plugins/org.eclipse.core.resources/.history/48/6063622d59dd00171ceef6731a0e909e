@@ -1,0 +1,19 @@
+package my.vaadin.app;
+
+import java.time.LocalDate;
+import java.util.List;
+
+public class Life {
+
+	private LocalDate birth;
+	private LocalDate death;
+	private List<Note> notes;
+	private List<Categories> categories;
+	
+	public Life(){
+		
+	}
+	
+	
+	
+}

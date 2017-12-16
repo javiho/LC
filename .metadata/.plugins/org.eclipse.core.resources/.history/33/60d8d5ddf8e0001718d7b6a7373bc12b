@@ -1,0 +1,14 @@
+package my.vaadin.app;
+
+import com.vaadin.ui.VerticalLayout;
+
+public class MainView extends VerticalLayout{
+
+	private final CalendarView;
+	
+	public MainView(){
+		super();
+		
+	}
+	
+}

@@ -1,0 +1,20 @@
+package my.vaadin.app;
+
+import com.vaadin.ui.VerticalLayout;
+
+public class MainView extends VerticalLayout{
+
+	private final CalendarView calendarView;
+	
+	private Life life;
+	
+	public MainView(){
+		super();
+		calendarView = new CalendarView();
+	}
+	
+	public void updateView(){
+		
+	}
+	
+}

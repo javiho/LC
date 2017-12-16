@@ -1,0 +1,12 @@
+package my.vaadin.app;
+
+public class User {
+
+	private Life life;
+	private String name;
+	
+	public User(String name){
+		this.name = name;
+	}
+	
+}

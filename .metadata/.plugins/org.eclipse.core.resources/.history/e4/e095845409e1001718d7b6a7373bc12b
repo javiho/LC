@@ -1,0 +1,26 @@
+package my.vaadin.app;
+
+import java.time.LocalDate;
+
+import com.vaadin.ui.VerticalLayout;
+
+public class CalendarView extends VerticalLayout{
+
+	public CalendarView(){
+		super();
+	}
+	
+	public void updateView(){
+		/*
+		 * mikä on resoluutioyksikkö?
+		 * käydään alusta loppupäivään ja luodaan bokseja sen perusteella
+		 */
+		for(LocalDate d = life.getBirth();
+				d.compareTo(life.getDeath()) <= 0;
+				d = d.plus(resolutionUnit)){
+			TimeUnitBox tob = new TimeUnitBox();
+			
+		}
+	}
+	
+}

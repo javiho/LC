@@ -1,0 +1,12 @@
+package my.vaadin.app;
+
+import java.time.LocalDate;
+
+public class Note {
+
+	private LocalDate startDate;
+	private LocalDate endDate;
+	
+	
+	
+}

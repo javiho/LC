@@ -1,0 +1,8 @@
+package my.vaadin.app;
+
+public class Note {
+
+	private LocalDate startDate;
+	private LocalDate startDate;
+	
+}

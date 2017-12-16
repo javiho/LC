@@ -1,0 +1,8 @@
+package my.vaadin.app;
+
+public class User {
+
+	private Life life;
+	private String name;
+	
+}

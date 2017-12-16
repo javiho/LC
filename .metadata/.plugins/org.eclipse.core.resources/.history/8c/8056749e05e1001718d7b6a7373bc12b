@@ -1,0 +1,17 @@
+package my.vaadin.app;
+
+import java.util.List;
+
+import com.vaadin.ui.VerticalLayout;
+
+public class TimeUnitBox extends VerticalLayout{
+
+	private List<Note> notes;
+	private LocalDate start;
+	private LocalDate end;
+	
+	public TimeUnitBox(){
+		super();
+	}
+	
+}

@@ -1,0 +1,10 @@
+package my.vaadin.app;
+
+import java.time.LocalDate;
+
+public class Life {
+
+	private LocalDate birth;
+	private LocalDate death;
+	
+}

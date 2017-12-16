@@ -1,0 +1,7 @@
+package my.vaadin.app;
+
+import com.vaadin.ui.VerticalLayout;
+
+public class MainView extends VerticalLayout{
+
+}

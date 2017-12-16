@@ -1,0 +1,30 @@
+package my.vaadin.app;
+
+import java.time.Duration;
+import java.time.LocalDate;
+
+import com.vaadin.ui.VerticalLayout;
+
+public class MainView extends VerticalLayout{
+
+	private final CalendarView calendarView;
+	
+	private Life life;
+	private Duration resolutionUnit;
+	
+	public MainView(){
+		super();
+		calendarView = new CalendarView();
+	}
+	
+	public void updateView(){
+		/*
+		 * mikä on resoluutioyksikkö?
+		 * käydään alusta loppupäivään ja luodaan bokseja sen perusteella
+		 */
+		for(LocalDate d = life.getBirth(); d.compareTo(life.getDeath()) <= 0; d = d + resolutionUnit){
+			
+		}
+	}
+	
+}
